@@ -17,7 +17,7 @@ LEAP_SDK_DIR = $(PROJECT_DIR)/../../LeapSDK
 LIBRARY_SEARCH_PATHS = $(LEAP_SDK_DIR)/lib
 
 // PATHS TO MAX FRAMEWORK/SDK
-MAX_FRAMEWORK_DIR=../../../__SDKs__/MaxSDK-6.1.4/c74support
+MAX_FRAMEWORK_DIR=$(PROJECT_DIR)/../../max-sdk/source/c74support
 MAX_HEADERS_DIR = $(MAX_FRAMEWORK_DIR)/max-includes
 MSP_HEADERS_DIR = $(MAX_FRAMEWORK_DIR)/msp-includes
 JIT_HEADERS_DIR = $(MAX_FRAMEWORK_DIR)/jit-includes
@@ -26,7 +26,7 @@ HEADER_SEARCH_PATHS = $(MAX_HEADERS_DIR) $(MSP_HEADERS_DIR) $(JIT_HEADERS_DIR)
 FRAMEWORK_SEARCH_PATHS = "$(MAX_FRAMEWORK_DIR)/max-includes" "$(MAX_FRAMEWORK_DIR)/msp-includes" "$(MAX_FRAMEWORK_DIR)/jit-includes"
 
 // Install Directory
-DSTROOT = $(PROJECT_DIR)/../../
+DSTROOT = $(PROJECT_DIR)/../../build/bin
 INSTALL_PATH = /
 
 // ----------------------------------
