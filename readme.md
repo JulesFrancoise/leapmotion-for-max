@@ -7,20 +7,34 @@ The object is inspired by aka.leapmotion, developed by Masayuki Akamatsu, but wa
 
 The object was developed for research or experimental applications. Therefore, the object is in beta, and we do not guarantee any sustained development and support. The source code is available on Ircam-Forge.
 
-__Compatibility:__ Max 6+ [Mac OSX 10.6+ // Windows 32/64bits]
+## Compatibility
+- Max 6+ 
+- macOS 10.6 - 11.x (Intel 64 bit / Apple Silicon)
+- Windows 32 / 64 bit
 
-__Features:__
+### macOS users on Monterey (macOS 12) or higher `EXPERIMENTAL`
+Follow [these archived instructions](https://archive.vn/b6T0g) to get the LeapSDK to recognise their device. Included below for ease: 
+1. Connect the LMC to the Mac
+2. Open the "Recalibrate Device" window, and leave it open
+3. Reboot your Mac
+4. LMC should now show as connected!
+
+### macOS users with Apple Silicon CPUs `EXPERIMENTAL`
+Run Max 8 using the [Rosetta Translation Environment](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment). 
+
+
+## Features
 - Full Skeletal Tracking
 - Automatic left/right hand routing
 - Automatic finger routing
 - Build-in Leap Motion gesture recognition
 - Simple record/replay based on MuBu
 
-### Contact
+## Contact
 
 Jules Françoise: <jules.francoise@ircam.fr>
 
-### author
+## Author
 
 This code has been initially authored by <a href="http://julesfrancoise.com">Jules Françoise</a> during his PhD thesis, supervised by <a href="frederic-bevilacqua.net">Frederic Bevilacqua</a>, in the <a href="http://ismm.ircam.fr">Sound Music Movement Interaction</a> team of the <a href="http://www.ircam.fr/stms.html?&L=1">STMS Lab</a> - IRCAM - CNRS - UPMC (2011-2015).
 
