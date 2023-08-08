@@ -1,6 +1,10 @@
 Leapmotion For Max
 ===========================================
 
+![Project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg)
+
+> This project is no longer under active development and will not be maintained. Feel free to get in touch if you wish to take over.
+
 This is a simple Max external for Leap Motion Skeletal Tracking.
 
 The object is inspired by aka.leapmotion, developed by Masayuki Akamatsu, but was re-written for the new tracking API. The object has separate outlets for gestures, hands, fingers, and frame information. Most of the features of the SDK are dumped as prefixed messages in Max.
