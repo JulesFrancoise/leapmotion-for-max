@@ -17,7 +17,7 @@ LEAP_SDK_DIR = $(PROJECT_DIR)/../../LeapSDK
 LIBRARY_SEARCH_PATHS = $(LEAP_SDK_DIR)/lib
 
 // PATHS TO MAX FRAMEWORK/SDK
-MAX_FRAMEWORK_DIR=../../../__SDKs__/MaxSDK-6.1.4/c74support
+MAX_FRAMEWORK_DIR=$(PROJECT_DIR)/../../max-sdk/source/c74support
 MAX_HEADERS_DIR = $(MAX_FRAMEWORK_DIR)/max-includes
 MSP_HEADERS_DIR = $(MAX_FRAMEWORK_DIR)/msp-includes
 JIT_HEADERS_DIR = $(MAX_FRAMEWORK_DIR)/jit-includes
@@ -26,7 +26,7 @@ HEADER_SEARCH_PATHS = $(MAX_HEADERS_DIR) $(MSP_HEADERS_DIR) $(JIT_HEADERS_DIR)
 FRAMEWORK_SEARCH_PATHS = "$(MAX_FRAMEWORK_DIR)/max-includes" "$(MAX_FRAMEWORK_DIR)/msp-includes" "$(MAX_FRAMEWORK_DIR)/jit-includes"
 
 // Install Directory
-DSTROOT = $(PROJECT_DIR)/../../
+DSTROOT = $(PROJECT_DIR)/../../patches
 INSTALL_PATH = /
 
 // ----------------------------------
@@ -37,8 +37,7 @@ INSTALL_PATH = /
 PRODUCT_NAME = $(PROJECT_NAME)
 PRODUCT_VERSION = 6.1.4
 
-// Architectures
-ARCHS = $(ARCHS_STANDARD_32_64_BIT)
+ARCHS = $(ARCHS_STANDARD)
 
 // Special Files
 GCC_PREFIX_HEADER = $(MAX_HEADERS_DIR)/macho-prefix.pch
@@ -54,7 +53,7 @@ OTHER_LDFLAGS = -framework MaxAPI
 
 SDKROOT = macosx
 
-MACOSX_DEPLOYMENT_TARGET = 10.6
+MACOSX_DEPLOYMENT_TARGET = 10.14
 
 C74_SYM_LINKER_FLAGS = @$(MAX_FRAMEWORK_DIR)/max-includes/c74_linker_flags.txt
 

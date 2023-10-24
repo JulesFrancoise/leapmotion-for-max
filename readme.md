@@ -1,5 +1,34 @@
-Leapmotion For Max
-===========================================
+# Leapmotion For Max
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Leapmotion For Max](#leapmotion-for-max)
+	- [Fork Changes](#fork-changes)
+	- [About](#about)
+		- [Contact](#contact)
+		- [author](#author)
+	- [Compiling](#compiling)
+		- [Mac OS X](#mac-os-x)
+		- [Windows](#windows)
+
+<!-- /TOC -->
+
+## Fork Changes
+
+This fork has made the following macOS focussed changes
+
+- the `LeapSDK` and the `max-sdk` as submodules for ease of building
+
+  You will need to either use the GitHub Desktop app or pull submodules after cloning
+
+  ```sh
+  git submodule update --init --recursive
+  ```
+
+- The architecture has been changed to 64-bit standard, now the mac and MaxMSP sdk default.
+- The `.mxo` builds to the `patches` directory
+
+## About
 
 ![Project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg)
 

@@ -1,5 +1,6 @@
 build/xcode/build
 build/xcode/leapmotion.xcodeproj/xcuserdata
 build/xcode/leapmotion.xcodeproj/project.xcworkspace
-LeapSDK
+build/bin
 *.zip
+.DS_Store
